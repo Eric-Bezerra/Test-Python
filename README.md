@@ -16,7 +16,7 @@ git clone https://github.com/Nyuruy/Test-Python/blob/main/python-questoes.py
 
 ## ⚙️ Executando a API
 
-1. Inicie o servido:
+1. Inicie o servidor:
 
 ```
 uvicorn python-questoes:app --reload
