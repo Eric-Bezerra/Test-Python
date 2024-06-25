@@ -11,7 +11,7 @@ Esta API fornece endpoints para calcular a soma de números pares, verificar pal
 Clone esse repositório:
 
 ```
-git clone https://github.com/Nyuruy/Test-Python/python-questoes.git
+git clone [https://github.com/Nyuruy/Test-Python/python-questoes.git](https://github.com/Nyuruy/Test-Python/blob/main/python-questoes.py)
 ```
 
 ## ⚙️ Executando a API
