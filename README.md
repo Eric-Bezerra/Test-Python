@@ -10,7 +10,7 @@ Esta API fornece endpoints para calcular a soma de números pares, verificar pal
 * Python 3.7+
 * FastAPI
 * uvicorn
-* Curl (opcional)
+* Curl (opcional, todos os comandos funcionan no navegador)
 * Git
 
 ### 🔧 Instalação
@@ -52,7 +52,7 @@ INFO:     Application startup complete.
 #### 👋 `/hello`
 Retorna a mensagem "Hello, World!".
 
-**Exemplo Via CMD:** Para usar pelo navegador retire o comando `curl` e pesquise a URL.
+**Exemplo Via CMD:**
 ~~~Bash
 curl https://127.0.0.1:8000/hello
 ~~~
@@ -72,7 +72,7 @@ Calcula a soma dos números pares em uma lista.
 **Parâmetros:**
 * ´numeros´: Lista de números inteiros separados por vírgula (ex: `1,2,3,4,5`)
 
-**Exemplo Via CMD:** Para usar pelo navegador retire o comando `curl` e pesquise a URL.
+**Exemplo Via CMD:**
 ~~~Bash
 curl https://127.0.0.1:8000/maior_numero?numeros=1&numeros=2&numeros=3&numeros=4&numeros=5
 ~~~
@@ -112,10 +112,9 @@ Encontra o maior número em uma lista.
 **Parâmetro:**
 * `numeros`: Lista de números inteiros separados por vírgula (ex: `1,2,3,4,5`).
 
-**Exemplo:**
-~~~Python
-GET /maior_numero?
-numeros=1&numeros=2&numeros=3&numeros=4&numeros=5
+**Exemplo Via CMD:**
+~~~Bash
+curl https://127.0.0.1:8000/maior_numero?numeros=1&numeros=2&numeros=3&numeros=4&numeros=5
 ~~~
 
 **Resposta:**
