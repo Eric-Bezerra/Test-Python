@@ -17,7 +17,7 @@ Esta API fornece endpoints para calcular a soma de números pares, verificar pal
 1. **Clone o repositório:**
    Use o comando `git` para clonar o repositório onde está o projeto:
 ~~~bash
-git clone https://github.com/Nyuruy/Test-Python.git
+git clone https://github.com/Eric-Bezerra/Test-Python.git
 ~~~
 
 2. **Navegue até o diretório do projeto:**
