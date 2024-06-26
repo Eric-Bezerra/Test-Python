@@ -27,7 +27,7 @@ git clone https://github.com/Nyuruy/Test-Python/blob/main/python-questoes.py
 cd C:\Users\SeuUsuário\Documents\python-questoes
 ~~~
 
-2. **Execute o comando:**Digite o comando abaixo no CMD:
+2. **Execute o comando:** Digite o comando abaixo no CMD:
 ~~~Bash
 uvicorn python-questoes:app --reload
 ~~~
