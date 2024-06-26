@@ -6,9 +6,15 @@ Um simples teste criar um programa capaz de resolver algumas questões matemáti
 
 Esta API fornece endpoints para calcular a soma de números pares, verificar palíndromos e encontrar o maior número em uma lista.
 
+### 📋 Pré-requisitos
+* Python 3.7+
+* FastAPI
+* uvicorn
+* Git
+
 ### 🔧 Instalação
 
-Clone esse repositório:
+Clone esse repositório com a ferramenta GIT:
 
 ```
 git clone https://github.com/Nyuruy/Test-Python/blob/main/python-questoes.py
@@ -16,11 +22,15 @@ git clone https://github.com/Nyuruy/Test-Python/blob/main/python-questoes.py
 
 ## ⚙️ Executando a API
 
-1. Inicie o servidor:
+1. **Abra o CMD:** Vá até a pasta onde seu arquivo `python-questoes.py` está localizado. Para isso, use o comando `cd` mo CMD. Por exemplo, se seu arquivo está em `C:\Users\SeuUsuário\Documents\python-questoes`, digite: 
+~~~Bash
+cd C:\Users\SeuUsuário\Documents\python-questoes
+~~~
 
-```
+2. **Execute o comando:**Digite o comando abaixo no CMD:
+~~~Bash
 uvicorn python-questoes:app --reload
-```
+~~~
 
 ### 🔨 Endpoints
 
