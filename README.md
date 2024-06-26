@@ -10,6 +10,7 @@ Esta API fornece endpoints para calcular a soma de números pares, verificar pal
 * Python 3.7+
 * FastAPI
 * uvicorn
+* Curl (opcional)
 * Git
 
 ### 🔧 Instalação
@@ -32,6 +33,18 @@ cd C:\Users\SeuUsuário\Documents\python-questoes
 uvicorn python-questoes:app --reload
 ~~~
 
+3. **Acesse a API:** O servidor irá iniciar e você poderá acessar sua API no endereço `https://127.0.0.1:8000/`. Você pode testar os endpoints, como `/hello`, `/soma_pares`, `/eh_palindromo`, e `/maior_numero`, adicionando parâmetros na URL.
+
+**Exemplo:**
+~~~Bash
+C:\Users\SeuUsuário\Documents\python-questoes> uvicorn python-questoes:app --reload
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [12345] using statreload
+INFO:     Started server process [12346]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+~~~
+
 ### 🔨 Endpoints
 
 ---
@@ -39,9 +52,9 @@ uvicorn python-questoes:app --reload
 #### 👋 `/hello`
 Retorna a mensagem "Hello, World!".
 
-**Exemplo:**
-~~~Python
-GET /hello
+**Exemplo Via CMD:** Para usar pelo navegador retire o comando `curl` e pesquise a URL.
+~~~Bash
+curl https://127.0.0.1:8000/hello
 ~~~
 
 **Resposta:**
@@ -59,10 +72,9 @@ Calcula a soma dos números pares em uma lista.
 **Parâmetros:**
 * ´numeros´: Lista de números inteiros separados por vírgula (ex: `1,2,3,4,5`)
 
-**Exemplo:**
-~~~Python
-GET /soma_pares?
-numeros=1&numeros2&numeros=3&numeros=4&numeros=5
+**Exemplo Via CMD:** Para usar pelo navegador retire o comando `curl` e pesquise a URL.
+~~~Bash
+curl https://127.0.0.1:8000/maior_numero?numeros=1&numeros=2&numeros=3&numeros=4&numeros=5
 ~~~
 
 **Resposta:**
@@ -80,9 +92,9 @@ Verifica se uma string é um palíndromo
 **Parâmetros:**
 * `texto`:String a ser verificada (ex: `arara`).
 
-**Exemplo:**
-~~~Python
-GET /eh_palindromo?texto=arara
+**Exemplo Via CMD:**
+~~~Bash
+curl https://127.0.0.1:8000/eh_palindromo?texto=arara
 ~~~
 
 **Resposta:**
